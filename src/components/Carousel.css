@@ -1,1 +1,44 @@
 /* write your carousel css in this file */
+.carousel-container{
+    height:700px;
+    width: 757px;
+    display: flex;
+    justify-content: space-between;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#left-arrow,#right-arrow{
+    color: white;
+    height: 700px;
+    width: 63px;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+h1{
+    background-color: rgba(255, 255, 255,0.5);
+    text-align: center;
+    width: fit-content;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 80px;
+    margin:0;
+    margin-bottom: 200px;
+}
+h3{
+    background-color: rgba(255, 255, 255,0.5);
+     text-align: center;
+    width: fit-content;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 30px;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+}
+ 
