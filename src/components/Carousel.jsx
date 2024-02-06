@@ -1,11 +1,8 @@
 import React, { Component } from "react";
 import "./Carousel.css";
 import { images } from "../data/CarouselData";
-// you can explore more - and check as how to use materiul ui
 import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos'
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
-
-// implement the class below
 class Carousel extends Component {
     state={
         index:0
@@ -15,7 +12,6 @@ class Carousel extends Component {
             images.map((item,i)=>(               
            [ <div key={i} className="container">
                 <h1>{item.title}</h1>
-                {/* <img src={item.img} alt="" /> */}
                 <h3>{item.subtitle}</h3>
             </div>]))
         )
@@ -38,7 +34,6 @@ class Carousel extends Component {
         <div className="carousel-container" style={{backgroundImage:`url(${images[index].img})`}}>
         <div id="left-arrow" onClick={this.handlePrevious}><ArrowBackIosIcon/></div>
         <div className="container">
-            {/* {this.renderImages(images)} */}
             {image[index]}
         </div>
         <div id="right-arrow" onClick={this.handleNext}><ArrowForwardIosIcon/></div>
